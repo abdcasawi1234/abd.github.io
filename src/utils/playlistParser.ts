@@ -42,16 +42,30 @@ export const parseM3U = (content: string): Channel[] => {
 export const generateSamplePlaylist = (): Channel[] => [
   {
     id: '1',
-    name: 'Sample Stream 1',
+    name: 'Sample HLS Stream',
     url: 'https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8',
     logo: 'https://images.pexels.com/photos/1174952/pexels-photo-1174952.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop',
-    group: 'Demo'
+    group: 'HLS Streams'
   },
   {
     id: '2',
-    name: 'Sample Stream 2',
+    name: 'Sample Live Stream',
     url: 'https://cph-p2p-msl.akamaized.net/hls/live/2000341/test/master.m3u8',
     logo: 'https://images.pexels.com/photos/3394650/pexels-photo-3394650.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop',
-    group: 'Demo'
+    group: 'HLS Streams'
+  },
+  {
+    id: '3',
+    name: 'Big Buck Bunny (MP4)',
+    url: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
+    logo: 'https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop',
+    group: 'MP4 Streams'
+  },
+  {
+    id: '4',
+    name: 'Sintel (WebM)',
+    url: 'https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm',
+    logo: 'https://images.pexels.com/photos/3945313/pexels-photo-3945313.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop',
+    group: 'WebM Streams'
   }
 ];

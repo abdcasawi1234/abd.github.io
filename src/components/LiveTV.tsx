@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowLeft, Search, Grid, List } from 'lucide-react';
-import { VideoPlayer } from './VideoPlayer';
+import { UniversalPlayer } from './UniversalPlayer';
 import { ChannelList } from './ChannelList';
 import { PlaylistLoader } from './PlaylistLoader';
 import { Channel, PlayerState } from '../types';
@@ -48,7 +48,7 @@ export const LiveTV: React.FC<LiveTVProps> = ({ onBack }) => {
   if (showPlayer && currentChannel) {
     return (
       <div className="min-h-screen bg-black">
-        <VideoPlayer
+        <UniversalPlayer
           channel={currentChannel}
           onStateChange={handlePlayerStateChange}
           playerState={playerState}
