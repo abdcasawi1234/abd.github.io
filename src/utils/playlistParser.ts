@@ -41,6 +41,13 @@ export const parseM3U = (content: string): Channel[] => {
 
 export const generateSamplePlaylist = (): Channel[] => [
   {
+    id: '0',
+    name: 'Live Stream',
+    url: 'https://td3wb1bchdvsahp.ngolpdkyoctjcddxshli469r.org/sunshine/xRyrVSyJi6hnr4jBjkU7FhWULb063F_FFxY4mK4PgjsN9s99HISeGwjjrWjxiSAk44ejaarMfe6YW_4_3okS5AxnoFhtPbgY6jooNz9VJ788jfNL44CL_qSWvm9mn8Qf7xw4FR0ST0MCw7_gsQSH2OPiThfjNqbl4n6GzL39LjKRbNNAD1Wx0bE5kCTj8YmtM7o9cQ0CrA7M_sKi4nkA0Wg_jF1pglSqRAOssemJuKE/hls/index.m3u8',
+    logo: 'https://images.pexels.com/photos/1174952/pexels-photo-1174952.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop',
+    group: 'Live Channels'
+  },
+  {
     id: '1',
     name: 'Sample HLS Stream',
     url: 'https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8',
