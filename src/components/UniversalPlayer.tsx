@@ -124,7 +124,6 @@ export const UniversalPlayer: React.FC<UniversalPlayerProps> = ({
           switch (data.type) {
             case Hls.ErrorTypes.NETWORK_ERROR:
               setError('Network error occurred while loading the stream');
-              hls.startLoad();
               break;
             case Hls.ErrorTypes.MEDIA_ERROR:
               setError('Media error occurred, attempting recovery');
